@@ -5,9 +5,9 @@ import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
 
 class Layout extends Component {
-	
+
 	state = {
-		showSideDrawer: true
+		showSideDrawer: false
 	}
 
 	sideDrawerClosedHandler = () => {
@@ -33,7 +33,6 @@ class Layout extends Component {
 			)
 	}
 
-	
 }
 
 export default Layout;
