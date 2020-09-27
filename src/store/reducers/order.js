@@ -1,5 +1,5 @@
 import * as actionTypes from '../actions/actionTypes';
-import { udpateObject } from '../utility';
+import { updateObject } from '../utility';
 
 const initialState = {
    orders: [],
@@ -36,7 +36,7 @@ const ordersSuccess = (state, action) => {
    return updateObject(state, { orders: action.orders, loading: false });
 };
 
-const ordersFail(state) => {
+const ordersFail = (state) => {
    return updateObject(state, { loading: false });
 };
 
