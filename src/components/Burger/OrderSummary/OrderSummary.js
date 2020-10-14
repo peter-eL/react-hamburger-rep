@@ -5,11 +5,6 @@ import Button from '../../UI/Button/Button';
 
 class OrderSummary extends Component {
 
-	//did
-	componentWillUpdate() {
-		console.log('[Order Summary] will update');
-	}
-
 	render() {
 
 		const ingredientSummary = Object.keys( this.props.ingredients )
@@ -27,7 +22,7 @@ class OrderSummary extends Component {
 				<p>A delicious burger with the following ingredients:</p>
 				<ul>
 					{ingredientSummary}
-				</ul>	
+				</ul>
 				<p><strong>Total Price: {this.props.price.toFixed(2)} $</strong></p>
 				<p>Continue to checkout?</p>
 				<Button btnType="Danger" clicked={this.props.purchaseCancelled}>CANCEL</Button>

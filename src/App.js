@@ -27,7 +27,7 @@ class App extends Component {
     );
 
     if (this.props.isAuthenticated) {
-      <Switch>
+      routes = <Switch>
            <Route path="/checkout" component={Checkout} />
            <Route path="/orders" component={Orders} />
            <Route path="/logout" component={Logout} />
