@@ -12,7 +12,6 @@ const Checkout = React.lazy(() => {
 });
 
 const Orders = React.lazy(() => {
-  console.log('orders!');
   return import('./containers/Orders/Orders');
 });
 
