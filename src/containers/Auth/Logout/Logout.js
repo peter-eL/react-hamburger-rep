@@ -6,9 +6,11 @@ import * as actions from '../../../store/actions/index';
 
 const logout = props => {
 
+    const { onLogout } = props; 
+
     useEffect(() => {
-        props.onLogout(props.history);
-    }, []);
+        onLogout();
+    }, [onLogout]);
 
     return <Redirect to="/" />;
 
