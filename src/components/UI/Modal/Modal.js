@@ -1,4 +1,4 @@
-import React, { } from 'react';
+import React from 'react';
 
 import classes from './Modal.css';
 import Aux from '../../../hoc/Auxiliary/Auxiliary';
